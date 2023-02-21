@@ -1,0 +1,17 @@
+//To print the reverse of the given number
+#include<stdio.h>
+int main()
+{
+	int n,rev=0,a;
+	printf("Enter the value of n:");
+	scanf("%d",&n);
+	a=n;
+	while(a>0)
+	{
+		rev=(rev*10)+(a%10);
+		a/=10;
+	}
+	printf("Reverse number=%d",rev);
+	return 0;
+	
+}
