@@ -1,0 +1,20 @@
+//To print the given number is Armstrong or not
+#include<stdio.h>
+int main()
+{
+	int n,a,sum=0,r;
+	printf("Enter the value of n:");
+	scanf("%d",&n);
+	a=n;
+	while(a>0)
+	{
+		r=a%10;
+		sum=sum+r*r*r;
+		a/=10;
+	}
+	if(sum==n)
+	printf("Armstrong number");
+	else
+	printf("Not Armstrong number");
+	return 0;
+}
